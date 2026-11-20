@@ -1,0 +1,25 @@
+{
+    "model_name": "ImprovedSalesLSTM",
+    "input_size": 6,
+    "future_input_size": 4,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "lookback_window": 90,
+    "forecast_horizon": 16,
+    "historical_features": [
+        "sales_scaled",
+        "promotion_scaled",
+        "day_of_week_sin",
+        "day_of_week_cos",
+        "is_weekend",
+        "is_holiday"
+    ],
+    "future_features": [
+        "day_of_week_sin",
+        "day_of_week_cos",
+        "is_weekend",
+        "is_holiday"
+    ],
+    "target": "sales_scaled"
+}

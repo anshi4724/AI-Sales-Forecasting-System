@@ -1,0 +1,36 @@
+
+# Python environment
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment variables
+.env
+.env.*
+
+# React
+frontend/node_modules/
+frontend/dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset files (download separately from Kaggle)
+data/raw/*.csv
+data/processed/*.csv
+
+# Temporary test requests
+raw_prediction_request*.json
+notebooks/prediction_request.json
+
+# Training checkpoints not needed for deployment
+notebooks/models/
+
+# Logs
+logs/
+
+# IDE and OS
+.vscode/
+.DS_Store
+Thumbs.db
